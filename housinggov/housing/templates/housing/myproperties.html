@@ -1,0 +1,31 @@
+<html>
+<body>
+<h1> My properties </h1>
+<table>
+	<tr>
+    	<th>Property Address 1</th>
+    	<th>Property Address 2</th>
+    	<th>City</th>
+    	<th>State</th>
+    	<th>ZIP</th>
+
+  	</tr>
+  {% for property in properties %}
+
+ <tr>
+ 	<td>{{property.property_address1}}</td>
+ 	<td>{{property.property_address2}}</td>
+ 	<td>{{property.property_city}}</td>
+ 	<td>{{property.property_state}}</td>
+ 	<td>{{property.property_zip}}</td>
+ 	{% if property.has_accessible_unit %}
+ 	<td> Accessible Unit! </td>
+ 	{% endif %}
+ 	{% if property.full_waitlist %}
+ 	<td> Units Available </td>
+ 	{% endif %}
+ </tr>
+  {% endfor %}
+</table>
+</body>
+</html>

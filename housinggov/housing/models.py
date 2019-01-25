@@ -40,7 +40,7 @@ class Property(models.Model):
 
 	property_phone = models.CharField(max_length=15)
 
-	year_built = models.DateTimeField('YearBuilt')
+	year_built = models.CharField(max_length=15)
 
 	website = models.CharField(max_length=200)
 

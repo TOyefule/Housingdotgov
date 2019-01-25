@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.template import loader
 
 # Create your views here.
 from django.http import HttpResponse
@@ -19,8 +20,10 @@ def globalview(request):
 	return HttpResponse('<h1>Here are statistics about our matching algorithm</h1>')
 
 def myproperties(request):
-	properties_list = Property.objects()
-	return HttpResponse('<h1>My properties</h1>')
+	properties_list = Property.objects.all()
+	template = loader.get_template('housing/myproperties.html')
+	context = {'properties': properties_list}
+	return HttpResponse(template.render(context, request))
 
 def acceptedtenants(request):
 	return HttpResponse('<h1>Accepted Tenants</h1>')
