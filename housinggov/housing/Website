@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Profile Document</title>
+</head>
+
+
+<body>
+  <form action="/my-form-submitting-page" method="post">
+    <!-- All our inputs will go in here -->
+    <h1>Profile Page</h1>
+    <p>Move in Date</p>
+    </p>
+    <p><input type="date"></p>
+    <p>Upload your finished application here</p>
+    <p><input type="file"> </p>
+    <placeholder="Upload Application here">
+      </p>
+      </p>
+
+      <p><input type="checkbox"></p>
+      <p><input type="radio " placeholder="Linkedin Here"></p>
+      <button>Linkedin</button>
+
+
+      <p><input type="checkbox"></p>
+      <p><input type="radio " placeholder="Video Introduction Here"></p>
+      <button>Youtube</button>
+
+      <p><input type="checkbox"></p>
+      <p><input type="radio " placeholder="Facebook Here"></p>
+      <button>Facebook</button>
+
+      <p><input type="checkbox"></p>
+      <p><input type="radio " placeholder="Linkedin Here"></p>
+      <button>Instagram</button>
+
+      <p><input type="checkbox"></p>
+      <p><input type="radio " placeholder="Twitter Here"></p>
+      <button>Twitter </button>
+  </form>
